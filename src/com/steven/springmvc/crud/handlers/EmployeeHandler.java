@@ -54,9 +54,6 @@ public class EmployeeHandler {
 	@RequestMapping(value="/emp", method=RequestMethod.PUT)
 	public String update(Employee employee){
 		employeeDao.save(employee);
-		
 		return "redirect:/emps";
 	}
-	
-	
 }
